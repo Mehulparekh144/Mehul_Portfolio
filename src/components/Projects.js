@@ -74,7 +74,7 @@ const Projects = () => {
                                 <h5 className="projectTitle card-title">{project.title}</h5>
                                 <p className="projectDesc card-text">{project.description}</p>
                                 <button className="btn projectBtn" ><a href={project.link} target
-                                    ="_blank"><i className="fa-brands fa-github"></i> View Code</a></button>
+                                    ="_blank" rel="noreferrer"><i className="fa-brands fa-github"></i> View Code</a></button>
                             </div>
                         </div>
 
@@ -97,7 +97,7 @@ const Projects = () => {
                             <div className="card-body" >
                                 <h5 className="projectTitle card-title">{design.title}</h5>
                                 <button className="btn projectBtn" ><a href={design.link} target
-                                    ="_blank"><i className="fa-brands fa-figma"> <br /></i> View Design File</a></button>
+                                    ="_blank" rel="noreferrer"><i className="fa-brands fa-figma"> <br /></i> View Design File</a></button>
                             </div>
                         </div>
 

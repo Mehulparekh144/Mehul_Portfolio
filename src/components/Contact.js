@@ -1,6 +1,6 @@
 import React from 'react'
 import contact from '../assets/contact.png'
-import emailjs, { send } from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 
 
