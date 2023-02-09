@@ -1,13 +1,267 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
+  background: rgb(64,66,88);
+  background: linear-gradient(180deg, rgba(64,66,88,1) 0%, rgba(80,87,122,1) 92%, rgba(107,114,142,1) 100%);
+  background-size: 120% 120%;
+  width: 100%;
+  height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* *{
+  border: 2px solid red;
+} */
+
+
+
+.navbar {
+  background-color: #404258;
+  padding: 1.1rem;
+}
+
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.747);
+  font-size: 0.9rem;
+  margin: 0 1.2rem 0 1.2rem;
+  transition: 0.2s ease;
+  text-transform: capitalize;
+}
+
+.nav-link:hover {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.btn {
+  margin-top: 1.1rem;
+  color: #404258;
+  background-color: white;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  font-size: 1.2rem;
+  color: #404258;
+
+}
+
+.introduction {
+  text-align: center;
+  color: white;
+  padding: 0px 1.5rem 0px 1.5rem;
+}
+
+.fa-arrow-right {
+  margin-left: 0.5rem;
+  -webkit-transition: 0.6s ease-out;
+  -moz-transition: 0.6s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.btn:hover .fa-arrow-right {
+  transform: rotateZ(90deg);
+
+}
+
+.profileImg {
+  transform: scale(0.6);
+  border-radius: 50%;
+  border: 2px solid ;
+}
+
+.introduction {
+
+  animation: gradient-animation 18s ease infinite;
+
+  padding-bottom: 1.7rem;
+}
+
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.introduction > h1 , h5{
+  font-family: 'Comfortaa';
+  font-weight: 700;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+
+}
+
+.introduction > p{
+  margin-top: 1.2rem;
+  color: rgba(255, 255, 255, 0.532);
+  animation: myAnim 1s ease 0s 1 normal forwards;
+  font-size: 1rem;
+}
+
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.links{
+  position: fixed;
+  z-index: 1;
+  top: 30%;
+  left: 0;
+  /* padding: 1rem; */
+  background-color: rgba(255, 255, 255, 0.592);
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
+}
+
+.link>a{
+  color: #404258;
+}
+
+.link>a>i{
+  margin: 1rem;
+  transform: scale(1.2);
+  transition: 0.3s ease;
+}
+
+.link>a>i:hover{
+  margin: 1.2rem;
+  transform: scale(2);
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .links{
+    display: none;
+  }
+  
+}
+
+
+.skillHeading {
+  font-family: 'Comfortaa';
+  font-weight: 700;
+  color: white;
+  z-index: inherit;
+  margin-left : 1.1rem
+
+}
+
+.skill {
+  padding: 0rem 4rem 2rem 4rem;
+
+}
+
+.skillBox>.card {
+  border-style: none;
+  font-family: 'Comfortaa', cursive;
+  background: none;
+}
+
+.skillTitle {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #454862;
+  padding: 1rem;
+  border-radius: 25px;
+  background-color: white;
+
+}
+
+.list-group-item {
+  font-family: 'Poppins', sans-serif;
+
+  text-align: center;
+  background: none;
+  border-style: none;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.532);
+
+}
+
+.container1{
+  padding: 0rem 4rem 2rem 4rem;
+  color: white;
+}
+
+.projectTitle{
+  animation: none;
+  background: none;
+  color: white;
+  margin-top: 1.1rem;
+  margin-bottom: 1.1rem;
+}
+
+
+.projectDesc{
+  color: rgba(255, 255, 255, 0.532);
+
+  font-size: 0.9rem;
+}
+.project{
+  margin: 1.1rem 1.2rem;
+  animation: none;
+  width: 33%;
+
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+
+.project:hover{
+  box-shadow: 0 1em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.5em);
+  
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .projectDiv{
+    flex-direction:  column !important;
+  }
+
+  .project{
+    margin: none;
+    padding: none;
+    width: 100%;
+  }
+  
+}
+
+
+.projectBtn{
+  margin: auto;
+  border: none;
+  background-color: #404258;
+
+
+}
+
+.projectBtn>a{
+  text-decoration: none;
+  color: white;
+}
+
+.contactp{
+  color: rgba(255, 255, 255, 0.532);
+  font-size: 1rem;
+  font-family: 'Comfortaa';
+
 }
