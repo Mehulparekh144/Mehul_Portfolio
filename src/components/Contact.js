@@ -30,15 +30,14 @@ const Contact = () => {
     };
 
     return (
-        <div className='container1' id='contact
-        '>
+        <div className='container1' id='contact'>
             <h2 style={{
                 fontFamily: 'Comfortaa'
             }} >Contact</h2>
             <p className='contactp'>Get in Touch !</p>
             <div className="row my-5">
                 <div className="col-sm-6">
-                    <img src={contact} alt="" className="img-fluid" />
+                    <img src={contact} style={{transform : 'scale(0.75)'}} alt="" className="img-fluid" />
                 </div>
                 <div className="col-sm-6">
                     <form ref={form} onSubmit={sendEmail} className='mx-3'>
