@@ -277,3 +277,23 @@ body {
   font-family: 'Comfortaa';
 
 }
+
+footer{
+  background-color: #131421;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+
+footer>a{
+  font-size: 0.8rem;
+  margin-top: 1.2rem;
+  color: rgba(255, 255, 255, 0.486);
+  text-decoration: none;
+  transition: 300ms ease-in-out;
+}
+footer>a:hover{
+  color: white;
+
+}
