@@ -15,7 +15,7 @@ const Home = () => {
 
                     <Link to='projects' smooth duration={300} className='btn'>Portfolio <i className="fa-solid fa-arrow-right"></i></Link>
                     
-                    <a href='https://github.com/Mehulparekh144'z target="_blank"  className='hidden btn ms-2' rel="noreferrer"><i className="fa-brands fa-linkedin-in"></i></a>
+                    <a href='https://www.linkedin.com/in/mehul-parekh-a519a9196/'z target="_blank"  className='hidden btn ms-2' rel="noreferrer"><i className="fa-brands fa-linkedin-in"></i></a>
             </div>
 
         </div>
